@@ -5,7 +5,12 @@ import Pagination from "@/app/ui/invoices/pagination";
 import Table from "@/app/ui/invoices/table";
 import Search from "@/app/ui/search";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
+import { Metadata } from "next";
 import { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 /**
  * Ojo: Params y searchParams viene dado por el router, que lo traspasa a la page en forma de parámetros.
